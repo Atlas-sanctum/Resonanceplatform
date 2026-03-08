@@ -9,6 +9,7 @@ import { WorkplaceMeeting } from "./components/WorkplaceMeeting";
 import { SocialNavigation } from "./components/SocialNavigation";
 import { EthicsPrivacy } from "./components/EthicsPrivacy";
 import { FutureVision } from "./components/FutureVision";
+import { SixthSense } from "./components/SixthSense";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
       { path: "social-navigation", Component: SocialNavigation },
       { path: "ethics", Component: EthicsPrivacy },
       { path: "vision", Component: FutureVision },
+      { path: "sixth-sense", Component: SixthSense },
     ],
   },
 ]);

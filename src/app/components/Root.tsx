@@ -16,6 +16,7 @@ export function Root() {
     { path: "/social-navigation", label: "Social Navigation" },
     { path: "/ethics", label: "Ethics & Privacy" },
     { path: "/vision", label: "Future Vision" },
+    { path: "/sixth-sense", label: "Sixth Sense" },
   ];
 
   return (
