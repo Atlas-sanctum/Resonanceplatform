@@ -285,6 +285,68 @@ export function Landing() {
             </GlassCard>
           </Link>
         </motion.div>
+
+        {/* New Developments Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-8"
+        >
+          <h2 className="text-3xl font-light text-white mb-6 text-center">Latest Developments</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link to="/forecast">
+              <GlassCard className="p-6 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border-blue-500/30 hover:border-blue-500/50 transition-all cursor-pointer group h-full">
+                <div className="mb-4">
+                  <svg className="w-12 h-12 text-blue-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                  <h3 className="text-xl font-light text-white mb-2 group-hover:text-blue-300 transition-colors">
+                    Emotional Weather Forecast
+                  </h3>
+                  <p className="text-sm text-white/60 mb-3">
+                    AI-powered predictions for future emotional atmospheres based on patterns and calendar events
+                  </p>
+                  <div className="text-xs text-blue-400">View 5-day forecast →</div>
+                </div>
+              </GlassCard>
+            </Link>
+
+            <Link to="/insights">
+              <GlassCard className="p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/30 hover:border-purple-500/50 transition-all cursor-pointer group h-full">
+                <div className="mb-4">
+                  <svg className="w-12 h-12 text-purple-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <h3 className="text-xl font-light text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Personal Insights Dashboard
+                  </h3>
+                  <p className="text-sm text-white/60 mb-3">
+                    Track your emotional patterns, growth metrics, and receive personalized recommendations
+                  </p>
+                  <div className="text-xs text-purple-400">View your insights →</div>
+                </div>
+              </GlassCard>
+            </Link>
+
+            <Link to="/ml-lab">
+              <GlassCard className="p-6 bg-gradient-to-br from-teal-500/10 to-green-500/10 border-teal-500/30 hover:border-teal-500/50 transition-all cursor-pointer group h-full">
+                <div className="mb-4">
+                  <svg className="w-12 h-12 text-teal-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <h3 className="text-xl font-light text-white mb-2 group-hover:text-teal-300 transition-colors">
+                    ML Model Laboratory
+                  </h3>
+                  <p className="text-sm text-white/60 mb-3">
+                    Train, visualize, and optimize the neural networks powering emotional sensing
+                  </p>
+                  <div className="text-xs text-teal-400">Explore models →</div>
+                </div>
+              </GlassCard>
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

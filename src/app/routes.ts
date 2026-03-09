@@ -10,6 +10,10 @@ import { SocialNavigation } from "./components/SocialNavigation";
 import { EthicsPrivacy } from "./components/EthicsPrivacy";
 import { FutureVision } from "./components/FutureVision";
 import { SixthSense } from "./components/SixthSense";
+import { EmotionalForecast } from "./components/EmotionalForecast";
+import { PersonalInsights } from "./components/PersonalInsights";
+import { MLModelLab } from "./components/MLModelLab";
+import { TeamDynamics } from "./components/TeamDynamics";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +30,10 @@ export const router = createBrowserRouter([
       { path: "ethics", Component: EthicsPrivacy },
       { path: "vision", Component: FutureVision },
       { path: "sixth-sense", Component: SixthSense },
+      { path: "forecast", Component: EmotionalForecast },
+      { path: "insights", Component: PersonalInsights },
+      { path: "ml-lab", Component: MLModelLab },
+      { path: "team-dynamics", Component: TeamDynamics },
     ],
   },
 ]);
